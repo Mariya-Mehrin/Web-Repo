@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Comment System</title>
+    <link rel="stylesheet" href="final.css">
+</head>
+<body>
+    <div>
+        <article>
+            Lede Paragraph: The [City Name] City Council voted unanimously last night to approve a \(\$5\) million budget for the construction of a new public park in the downtown area, a project supporters say will revitalize a neglected neighborhood. The vote came after a two-hour public hearing where residents voiced overwhelming support for the "Riverfront Green" project, which aims to create more green space and community gathering areas. Second Paragraph: The approved funding will be used to purchase the three-acre lot on Main Street and begin development of the park's initial phase, which includes a playground, walking paths, and a small amphitheater. Construction is expected to begin next spring, with a projected opening date in the fall of 2026. 
+            
+        </article>
+    </div>
+<div class="div1">
+    <h1>Comment System</h1>
+
+    <div id="stats">
+        <p>Total Comments: <span id="totalComments">0</span></p>
+        <p>Average Rating: <span id="avgRating">0</span></p>
+    </div>
+
+    <form id="commentForm">
+        <input type="text" id="name" placeholder="Name">
+        <input type="text" id="email" placeholder="Email (optional)">
+        <textarea id="comment" placeholder="Write comment..."></textarea>
+
+        <div class="stars" id="stars">
+            <span data-val="1">☆</span>
+            <span data-val="2">☆</span>
+            <span data-val="3">☆</span>
+            <span data-val="4">☆</span>
+            <span data-val="5">☆</span>
+        </div>
+
+        <button type="submit">Submit</button>
+    </form>
+
+    <h2>All Comments</h2>
+    <div id="commentList"></div>
+</div>
+
+<script src="final.js"></script>
+</body>
+</html>
